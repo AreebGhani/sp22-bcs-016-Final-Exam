@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Kord Snap & Solve",
+    "slug": "kord-snap-and-solve",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/logo.png",
+    "scheme": "kord-snap-and-solve",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./src/assets/images/big_logo.jpeg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.kordsnapandsolve.app",
+      "versionCode": 1
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./src/assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-document-scanner-plugin",
+        {
+          "cameraPermission": "$(PRODUCT_NAME) needs camera access to scan questions"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1732b941-53cb-4dc1-a17e-ebe13425ff72"
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "cli": {
+    "version": ">= 7.8.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      },
+      "env": {
+        "APP_NAME": "Kord Snap & Solve",
+        "FIREBASE_API_KEY": "AIzaSyBzTuPcNA1ZxTfnMVAVoA7EFwwi1z8iYhk",
+        "FIREBASE_AUTH_DOMAIN": "kord-snap-and-solve.firebaseapp.com",
+        "FIREBASE_PROJECT_ID": "kord-snap-and-solve",
+        "FIREBASE_STORAGE_BUCKET": "kord-snap-and-solve.appspot.com",
+        "FIREBASE_MESSAGING_SENDER_ID": "1068297986797",
+        "FIREBASE_APP_ID": "1:1068297986797:web:1166792edbfc4fdab022e4"
+      }
+    },
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "image": "latest",
+        "simulator": true
+      },
+      "android": {
+        "image": "latest"
+      },
+      "env": {
+        "APP_NAME": "Kord Snap & Solve",
+        "FIREBASE_API_KEY": "AIzaSyBzTuPcNA1ZxTfnMVAVoA7EFwwi1z8iYhk",
+        "FIREBASE_AUTH_DOMAIN": "kord-snap-and-solve.firebaseapp.com",
+        "FIREBASE_PROJECT_ID": "kord-snap-and-solve",
+        "FIREBASE_STORAGE_BUCKET": "kord-snap-and-solve.appspot.com",
+        "FIREBASE_MESSAGING_SENDER_ID": "1068297986797",
+        "FIREBASE_APP_ID": "1:1068297986797:web:1166792edbfc4fdab022e4"
+      }
+    },
+    "preview": {
+      "channel": "preview",
+      "android": {
+        "image": "latest",
+        "buildType": "apk"
+      },
+      "ios": {
+        "image": "latest"
+      },
+      "distribution": "internal",
+      "env": {
+        "APP_NAME": "Kord Snap & Solve",
+        "FIREBASE_API_KEY": "AIzaSyBzTuPcNA1ZxTfnMVAVoA7EFwwi1z8iYhk",
+        "FIREBASE_AUTH_DOMAIN": "kord-snap-and-solve.firebaseapp.com",
+        "FIREBASE_PROJECT_ID": "kord-snap-and-solve",
+        "FIREBASE_STORAGE_BUCKET": "kord-snap-and-solve.appspot.com",
+        "FIREBASE_MESSAGING_SENDER_ID": "1068297986797",
+        "FIREBASE_APP_ID": "1:1068297986797:web:1166792edbfc4fdab022e4"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      },
+      "env": {
+        "APP_NAME": "Kord Snap & Solve",
+        "FIREBASE_API_KEY": "AIzaSyBzTuPcNA1ZxTfnMVAVoA7EFwwi1z8iYhk",
+        "FIREBASE_AUTH_DOMAIN": "kord-snap-and-solve.firebaseapp.com",
+        "FIREBASE_PROJECT_ID": "kord-snap-and-solve",
+        "FIREBASE_STORAGE_BUCKET": "kord-snap-and-solve.appspot.com",
+        "FIREBASE_MESSAGING_SENDER_ID": "1068297986797",
+        "FIREBASE_APP_ID": "1:1068297986797:web:1166792edbfc4fdab022e4"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "../path/to/api-xxx-yyy-zzz.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "john@turtle.com",
+        "ascAppId": "1234567890",
+        "appleTeamId": "AB12XYZ34S"
+      }
+    }
+  }
+}

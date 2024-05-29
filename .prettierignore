@@ -1,0 +1,15 @@
+node_modules/**
+package.json
+yarn.lock
+ios/**
+android/**
+assets/**
+.vscode
+.expo
+.prettirrc
+.eslintrc
+tsconfig.json
+.github
+.husky
+*.md
+server/**
